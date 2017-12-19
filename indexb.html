@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="css/bootstrap-flexmin.css">
+	<link rel="stylesheet" href="font_awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<title>Document</title>
+</head>
+<body>
+	<!-- breakpoints tamaños de pantalla -->
+	<!-- offset-xs-2 en xs se corre dos columnas -->
+	<!-- con push y pull se cambia el orden de las columnas -->
+	<!-- header -->
+	<header id="header-container">
+		<div class="container">
+			<div class="row flex-items-xs-middle flex-items-xs-between">
+				<div class="col-xs-6">
+					<h1>Market Shop</h1>		
+				</div>
+				<div class="col-xs-3 text-xs-right">
+					<button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navMenu">
+						&#9776; <!-- burguer button -->
+					</button>
+					<a class="login hidden-xs-down text-uppercase font-weight-bold" href="#">Login</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- fin header -->
+	<!-- Menu -->
+	<div id="menu-container" >
+		<nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 offset-xs-1 col-md-4 offset-md-0">
+						<ul class="nav navbar-nav">
+							<li class="nav-item">
+								<a href="#" class="nav-link active text-xs-center">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="catalogo.html" class="nav-link text-xs-center">Catalogo</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link text-xs-center">Carrito</a>
+							</li>
+							<li class="nav-item hidden-sm-up text-xs-center">
+								<a href="#" class="nav-link">Login</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-6 offset-md-2 hidden-xs-down">
+						<form>
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn btn-platzi" type="button">
+										<!-- hidden oculta elementos a un determinado tamano -->
+										<span class="hidden-sm-down">Buscar</span>
+										<i class="fa fa-search hidden-md-up"></i>
+									</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div id="search-bar" class="container hidden-sm-up">
+			<div class="row">
+				<div class="col-xs">
+					<form>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<span class="input-group-btn">
+							<button class="btn btn-platzi" type="button">
+							<!-- hidden oculta elementos a un determinado tamano -->
+							<span class="hidden-sm-down">Buscar</span>
+										<i class="fa fa-search hidden-md-up"></i>
+									</button>
+								</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<!-- Fin Menu -->
+	<!-- Carrusel -->
+	<div id="carrusel-container">
+		<div id="productoscarrusel" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#productoscarrusel" data-slide-to="0" class="active"></li>
+			    <li data-target="#productoscarrusel" data-slide-to="1"></li>
+			    <li data-target="#productoscarrusel" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner" role="listbox">
+			    <div class="carousel-item active">
+			      <img src="img/descarga.svg" alt="First slide">
+					  <div class="carousel-caption">
+					    <h4>Producto 1</h4>
+					    <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui incidunt esse deserunt, voluptates labore veritatis iste earum beatae mollitia! Officiis architecto ab necessitatibus neque quidem dolor recusandae vitae esse laborum.</p>
+					  </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="img/descarga.svg" alt="Second slide">
+			      <div class="carousel-caption">
+					    <h4>Producto 2</h4>
+					    <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui incidunt esse deserunt, voluptates labore veritatis iste earum beatae mollitia! Officiis architecto ab necessitatibus neque quidem dolor recusandae vitae esse laborum.</p>
+					  </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="img/descarga.svg" alt="Third slide">
+			      <div class="carousel-caption">
+					    <h4>Producto 3</h4>
+					    <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui incidunt esse deserunt, voluptates labore veritatis iste earum beatae mollitia! Officiis architecto ab necessitatibus neque quidem dolor recusandae vitae esse laborum.</p>
+					  </div>
+			    </div>
+			</div>
+			<a class="left carousel-control" href="#productoscarrusel" role="button" data-slide="prev">
+			    <span class="icon-prev" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#productoscarrusel" role="button" data-slide="next">
+			    <span class="icon-next" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			</a>
+	</div>
+</div>
+	<!-- Fin carrusel -->
+	<!-- info -->
+	<div id="info-container">
+		<div class="container">
+			<div class="row text-xs-center">
+				<div class="col-xs-12 col-md-4">
+					<img src="img/calidad.png" alt="Calidad" class="img-fluid">
+					<h4>Calidad</h4>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<img src="img/envio.png" alt="Envio" class="img-fluid">
+					<h4>Envio Gratis</h4>
+			    </div>
+				<div class="col-xs-12 col-md-4">
+					<img src="img/soporte.png" alt="Soporte" class="img-fluid">
+					<h4>Soporte 24/7</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- fin info  -->
+	<!-- footer -->
+	<footer class="footer-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<form id="suscribeform" action="https://formspree.io/nismopls@gmail.com" method="POST">
+						<h4>Quieres recibir lo ultimo?</h4>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
+							<small class="form-text text-muted">No compartiremos tu informacion</small>
+						</div>
+						<button type="submit" class="btn btn-primary form-text">Suscribete</button>
+					</form>
+				</div>
+				<div class="col-md-3 offset-md-5">
+					<h4>Navegacion</h4>
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="catalogo.html" class="nav-link">Catalogo</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Carrito</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Login</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">FAQ</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- fin footer -->
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
